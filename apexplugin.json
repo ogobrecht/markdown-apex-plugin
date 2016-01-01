@@ -1,0 +1,33 @@
+{
+  "name" : "Markdown For APEX",
+  "version" : "1.0.0",
+  "description" : "Turns text areas into Markdown editors, converts text into HTML",
+  "keywords" : ["Markdown", "JavaScript", "editor", "HTML renderer"],
+  "homepage" : "https://gobrechts.net/wiki/projects/markdown-apex-plugin",
+  "bugs" : {
+    "url" : "https://github.com/ogobrecht/markdown-apex-plugin/issues",
+    "email" : "apex-plugin@gobrechts.net"
+  },
+  "license" : "MIT",
+  "author" : {
+    "name" : "Ottmar Gobrecht",
+    "email" : "apex-plugin@gobrechts.net",
+    "url" : "https://gobrechts.net/wiki"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ogobrecht/d3-force-apex-plugin.git"
+  },
+  "oracle" : {
+    "versions" : ["10.2.0.1"],
+    "apex" : {
+      "versions" : ["4.2.6","5.0.0"],
+      "plugin" : {
+        "internalName" : "NET.GOBRECHTS.MARKDOWN",
+        "type" : "dynamic action",
+        "demo" : "https://apex.oracle.com/pls/apex/f?p=66154:1",
+        "previewImage" : "https://raw.githubusercontent.com/ogobrecht/markdown-apex-plugin/master/preview.png"
+      }
+    }
+  }
+}
