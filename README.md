@@ -34,7 +34,7 @@ Markdown formatted text into HTML._
 - [License: MIT] (https://github.com/ogobrecht/markdown-apex-plugin/blob/master/LICENSE.txt)
 - [Download] (https://github.com/ogobrecht/markdown-apex-plugin/releases/latest)
 - [Issues] (https://github.com/ogobrecht/markdown-apex-plugin/issues)
-- [Demo App] (https://apex.oracle.com/pls/apex/f?p=66154:1)
+- [Demo App] (https://apex.oracle.com/pls/apex/f?p=MARKDOWN)
 
 
 ## Credits
