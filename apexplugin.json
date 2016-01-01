@@ -25,7 +25,7 @@
       "plugin" : {
         "internalName" : "NET.GOBRECHTS.MARKDOWN",
         "type" : "dynamic action",
-        "demo" : "https://apex.oracle.com/pls/apex/f?p=66154:1",
+        "demo" : "https://apex.oracle.com/pls/apex/f?p=MARKDOWN",
         "previewImage" : "https://raw.githubusercontent.com/ogobrecht/markdown-apex-plugin/master/preview.png"
       }
     }
