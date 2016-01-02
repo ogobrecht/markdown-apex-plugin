@@ -21,7 +21,6 @@ in this sentence after the words "New paragraphs".
 like in the first list item, but you can also be lazy
 like in this item...
     * Sublist entries start by adding four spaces
-    * Another sublist entry
 * Ordered lists begin with a number
     1. The number value is not interesting for the
        rendered result
@@ -35,6 +34,11 @@ in back ticks (`` `code` ``)...
 
 > Blockquotes start with `>`
 >> Blockquotes can be nested by adding additional `>`
+
+Horizontal rules beginn with three or more minus
+signs `---`.
+
+---
 
 Links are wrapped in square brackets. There are two
 types of links: inline and reference.

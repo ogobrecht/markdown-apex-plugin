@@ -12,7 +12,7 @@ prompt  APPLICATION 66154 - Markdown Dynamic Action Type Plugin - Demo App
 -- Application Export:
 --   Application:     66154
 --   Name:            Markdown Dynamic Action Type Plugin - Demo App
---   Date and Time:   20:25 Friday January 1, 2016
+--   Date and Time:   21:40 Saturday January 2, 2016
 --   Exported By:     ADMIN
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -175,7 +175,7 @@ wwv_flow_api.create_flow(
   p_proxy_server=> nvl(wwv_flow_application_install.get_proxy,''),
   p_cust_authentication_process=> '',
   p_cust_authentication_page=> '',
-  p_flow_version=> 'Demo App Release 2016-01-01 - Plugin Release 1.0.0 (2016-01-01)',
+  p_flow_version=> 'Demo App Release 2016-01-02 - Plugin Release 1.0.0 (2016-01-01)',
   p_flow_status=> 'AVAILABLE_W_EDIT_LINK',
   p_flow_unavailable_text=> 'This application is currently unavailable at this time.',
   p_build_status=> 'RUN_AND_BUILD',
@@ -191,7 +191,7 @@ wwv_flow_api.create_flow(
   p_include_legacy_javascript=> 'Y',
   p_default_error_display_loc=> 'INLINE_WITH_FIELD_AND_NOTIFICATION',
   p_last_updated_by => 'ADMIN',
-  p_last_upd_yyyymmddhh24miss=> '20160101202537',
+  p_last_upd_yyyymmddhh24miss=> '20160102214013',
   p_ui_type_name => null,
   p_required_roles=> wwv_flow_utilities.string_to_table2(''));
  
@@ -413,7 +413,7 @@ wwv_flow_api.create_page (
  ,p_help_text => 
 'No help is available for this page.'
  ,p_last_updated_by => 'ADMIN'
- ,p_last_upd_yyyymmddhh24miss => '20151231171103'
+ ,p_last_upd_yyyymmddhh24miss => '20160102213946'
   );
 null;
  
@@ -550,7 +550,6 @@ wwv_flow_api.create_page_item(
 'like in the first list item, but you can also be lazy'||unistr('\000a')||
 'like in this item...'||unistr('\000a')||
 '    * Sublist entries start by adding four spaces'||unistr('\000a')||
-'    * Another sublist entry'||unistr('\000a')||
 '* Ordered lists begin with a number'||unistr('\000a')||
 '    1. The number value is not interesting for the'||unistr('\000a')||
 '       rendered result'||unistr('\000a')||
@@ -564,6 +563,11 @@ wwv_flow_api.create_page_item(
 ''||unistr('\000a')||
 '> Blockquotes start with `>`'||unistr('\000a')||
 '>> Blockquotes can be nested by adding additional `>`'||unistr('\000a')||
+''||unistr('\000a')||
+'Horizontal rules beginn with three or more minus'||unistr('\000a')||
+'signs `---`.'||unistr('\000a')||
+''||unistr('\000a')||
+'---'||unistr('\000a')||
 ''||unistr('\000a')||
 'Links are wrapped in square brackets. There are two'||unistr('\000a')||
 'types of links: inline and reference.'||unistr('\000a')||
@@ -684,7 +688,7 @@ wwv_flow_api.create_page_item(
 '[3]: https://github.com/ogobrecht/markdown-apex-plugin/blob/master/LICENSE.txt'||unistr('\000a')||
 '[4]: https://github.com/ogobrecht/markdown-apex-plugin/releases/latest'||unistr('\000a')||
 '[5]: https://github.com/ogobrecht/markdown-apex-plugin/issues'||unistr('\000a')||
-'[6]: https://github.com/ogobrecht/markdown-apex-plugin/blob/master/markdown-apex-plugin-demo-app.sql',
+'[6]: https://gobrechts.net/downloads/markdown-apex-plugin-demo-app.zip',
   p_source_type=> 'STATIC',
   p_display_as=> 'NATIVE_TEXTAREA',
   p_lov_display_null=> 'NO',
