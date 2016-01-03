@@ -2,7 +2,7 @@ Please do not download directly this code - this is the development version and 
 stable version here] (https://github.com/ogobrecht/markdown-apex-plugin/releases/latest).
 
 
-# Markdown APEX Plugin
+# Oracle APEX Dynamic Action Type Plugin: Markdown
 
 _This Oracle APEX plugin uses the Stack Overflow JavaScript Markdown implementation to convert
 Markdown formatted text into HTML._
@@ -55,4 +55,4 @@ Please use for all comments and discussions the
 
 ### 1.0.0 (2016-01-01)
 
-- Initial release
+- First public release
