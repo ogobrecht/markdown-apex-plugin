@@ -15,11 +15,11 @@ Markdown formatted text into HTML._
 * Can be used on dynamic content like reports
 * Prints runtime statistics to the browser console when page is in debug mode
 * NEW in version 1.1.0:
-    * Support for the following Markdown Extra extensions: tables, fenced code blocks, definition lists, footnotes, special attributes, SmartyPants, newlines and strikethrough à la GitHub - for details see the page "Custom Preview, Markdown Extra"
-    * Support for the well known image substitution strings (also in lowercase) in the live preview: &#35;image_prefix&#35;, &#35;app_images&#35;, &#35;workspace_images&#35; and additionally &#35;images&#35;, which is configurable with a own image function - see in the example editor preview on the left
+    * Support for the following Markdown Extra extensions: tables, fenced code blocks, definition lists, footnotes, special attributes, SmartyPants, newlines and strikethrough à la GitHub
+    * Support for the well known image substitution strings (also in lowercase) in the live preview: &#35;image_prefix&#35;, &#35;app_images&#35;, &#35;workspace_images&#35; and additionally &#35;images&#35;, which is configurable with a own image function
     * Syntax highlighting in code blocks with [highlight.js][8] and the default set of 23 common languages: Apache, Bash, C#, C++, CSS, CoffeeScript, Device Tree (*.dts), Diff, HTML-XML, HTTP, Ini, JSON, Java, JavaScript, Makefile, Markdown, Nginx, Objective-C, PHP, Perl, Python, Ruby, SQL - if you need more or other languages (146 available) then you can create your own custom highlight.js package
-    * Custom preview container, which allows you to create a full screen side by side editor - for an example see the page "Custom Preview, Markdown Extra"
-    * Improved styling of code blocks and lists, inspired by [DokuWiki][9] - hope you find it nice, if not tweak the css ;-)
+    * Custom preview container, which allows you to create a full screen side by side editor - for an example see the [online demo app][9]
+    * Improved styling of code blocks and lists, inspired by [DokuWiki][10]
     * Improved security with a optional sanitizing converter (per default switched on), which only allows whitelisted HTML tags
     * All new options are configurable under Shared Components > User Interface > Component Settings > Markdown[Plugin]
 
@@ -61,25 +61,27 @@ Please use for all comments and discussions the
 
 ### 1.1.0 (2016-02-14)
 
-* Support for the following Markdown Extra extensions: tables, fenced code blocks, definition lists, footnotes, special attributes, SmartyPants, newlines and strikethrough à la GitHub - for details see the page "Custom Preview, Markdown Extra"
-* Support for the well known image substitution strings (also in lowercase) in the live preview: &#35;image_prefix&#35;, &#35;app_images&#35;, &#35;workspace_images&#35; and additionally &#35;images&#35;, which is configurable with a own image function - see in the example editor preview on the left
+* Support for the following Markdown Extra extensions: tables, fenced code blocks, definition lists, footnotes, special attributes, SmartyPants, newlines and strikethrough à la GitHub
+* Support for the well known image substitution strings (also in lowercase) in the live preview: &#35;image_prefix&#35;, &#35;app_images&#35;, &#35;workspace_images&#35; and additionally &#35;images&#35;, which is configurable with a own image function
 * Syntax highlighting in code blocks with [highlight.js][8] and the default set of 23 common languages: Apache, Bash, C#, C++, CSS, CoffeeScript, Device Tree (*.dts), Diff, HTML-XML, HTTP, Ini, JSON, Java, JavaScript, Makefile, Markdown, Nginx, Objective-C, PHP, Perl, Python, Ruby, SQL - if you need more or other languages (146 available) then you can create your own custom highlight.js package
-* Custom preview container, which allows you to create a full screen side by side editor - for an example see the page "Custom Preview, Markdown Extra"
-* Improved styling of code blocks and lists, inspired by [DokuWiki][9] - hope you find it nice, if not tweak the css ;-)
+* Custom preview container, which allows you to create a full screen side by side editor - for an example see the [online demo app][9]
+* Improved styling of code blocks and lists, inspired by [DokuWiki][10]
 * Improved security with a optional sanitizing converter (per default switched on), which only allows whitelisted HTML tags
 * All new options are configurable under Shared Components > User Interface > Component Settings > Markdown[Plugin]
+
 
 ### 1.0.0 (2016-01-01)
 
 * First public release
 
 
-[1]: https://gobrechts.net/wiki/projects/markdown-apex-plugin
-[2]: https://github.com/ogobrecht/markdown-apex-plugin
-[3]: https://github.com/ogobrecht/markdown-apex-plugin/blob/master/LICENSE.txt
-[4]: https://github.com/ogobrecht/markdown-apex-plugin/releases/latest
-[5]: https://github.com/ogobrecht/markdown-apex-plugin/issues
-[6]: https://apex.oracle.com/pls/apex/f?p=MARKDOWN
-[7]: http://semver.org
-[8]: https://highlightjs.org/
-[9]: https://www.dokuwiki.org
+ [1]: https://gobrechts.net/wiki/projects/markdown-apex-plugin
+ [2]: https://github.com/ogobrecht/markdown-apex-plugin
+ [3]: https://github.com/ogobrecht/markdown-apex-plugin/blob/master/LICENSE.txt
+ [4]: https://github.com/ogobrecht/markdown-apex-plugin/releases/latest
+ [5]: https://github.com/ogobrecht/markdown-apex-plugin/issues
+ [6]: https://apex.oracle.com/pls/apex/f?p=MARKDOWN
+ [7]: http://semver.org
+ [8]: https://highlightjs.org/
+ [9]: https://apex.oracle.com/pls/apex/f?p=MARKDOWN:CUSTOM_PREVIEW
+[10]: https://www.dokuwiki.org
