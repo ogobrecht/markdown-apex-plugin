@@ -7,11 +7,11 @@ BEGIN
       apex_plugin_util.debug_dynamic_action( p_plugin => p_plugin, p_dynamic_action => p_dynamic_action );
    END IF;
 
-   apex_css.add_file( p_name => 'markdown-', p_directory => p_plugin.file_prefix, p_version => '1.1.0' );
+   apex_css.add_file( p_name => 'markdown-', p_directory => p_plugin.file_prefix, p_version => '1.1.1' );
 
    apex_javascript.add_library( p_name                  => 'markdown-'
                               , p_directory             => p_plugin.file_prefix
-                              , p_version               => '1.1.0'
+                              , p_version               => '1.1.1'
                               , p_check_to_add_minified => TRUE );
 
    apex_javascript.add_library( p_name                  => 'highlight.pack.common.'

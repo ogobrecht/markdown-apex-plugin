@@ -1,6 +1,6 @@
 {
   "name" : "Markdown For APEX",
-  "version" : "1.1.0",
+  "version" : "1.1.1",
   "description" : "Turns text areas into Markdown editors, converts text into HTML",
   "keywords" : ["Markdown", "JavaScript", "editor", "HTML renderer"],
   "homepage" : "https://gobrechts.net/wiki/projects/markdown-apex-plugin",

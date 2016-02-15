@@ -59,6 +59,11 @@ Please use for all comments and discussions the
 [issues functionality on GitHub][5].
 
 
+### 1.1.1 (2016-02-15)
+
+* Fixed: Helper function to maximize editor item not working in IE
+
+
 ### 1.1.0 (2016-02-14)
 
 * Support for the following Markdown Extra extensions: tables, fenced code blocks, definition lists, footnotes, special attributes, SmartyPants, newlines and strikethrough à la GitHub

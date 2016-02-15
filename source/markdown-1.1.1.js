@@ -4986,7 +4986,7 @@ else
 
 // global markdown object
 var markdown = {};
-markdown.pluginVersion = '1.1.0';
+markdown.pluginVersion = '1.1.1';
 markdown.options = {};
 markdown.substitutions = {};
 markdown.statistics = {};
@@ -5098,7 +5098,7 @@ markdown.maximizeItem = function (itemType, selector, regionIsNthParent, offsetB
         // jQuery eq function start count with 0, we want start count with 1
         var region = item.parents().eq(regionIsNthParent -1);
         var maximizeEditor = function() {
-            item.width( region.width() - 2 * parseInt( region.css('padding') ))
+            item.width( region.width() - parseInt(region.css('padding-left')) - parseInt(region.css('padding-right')) )
                 .height( $(window).height() - item.offset().top - offsetBottom );
         };
         var maximizePreview = function() {
