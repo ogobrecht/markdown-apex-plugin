@@ -12,7 +12,7 @@ prompt  APPLICATION 66154 - Markdown Dynamic Action Type Plugin - Demo App
 -- Application Export:
 --   Application:     66154
 --   Name:            Markdown Dynamic Action Type Plugin - Demo App
---   Date and Time:   19:34 Monday February 15, 2016
+--   Date and Time:   21:35 Tuesday February 16, 2016
 --   Exported By:     ADMIN
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -193,7 +193,7 @@ wwv_flow_api.create_flow(
   p_include_legacy_javascript=> 'Y',
   p_default_error_display_loc=> 'INLINE_WITH_FIELD_AND_NOTIFICATION',
   p_last_updated_by => 'ADMIN',
-  p_last_upd_yyyymmddhh24miss=> '20160215193447',
+  p_last_upd_yyyymmddhh24miss=> '20160216213523',
   p_ui_type_name => null,
   p_required_roles=> wwv_flow_utilities.string_to_table2(''));
  
@@ -1283,7 +1283,7 @@ wwv_flow_api.create_page (
  ,p_help_text => 
 'No help is available for this page.'
  ,p_last_updated_by => 'ADMIN'
- ,p_last_upd_yyyymmddhh24miss => '20160215193316'
+ ,p_last_upd_yyyymmddhh24miss => '20160216213404'
   );
 null;
  
@@ -1674,7 +1674,7 @@ p:=p||'tainer by yourself. If the text area (Markdown editor) can be displayed i
 ''||unistr('\000a')||
 '...on this page the whole right region is conditional and not displayed when the hid';
 
-p:=p||'den item P3_PAGE_MODE_RW has the value `W` in session state...'||unistr('\000a')||
+p:=p||'den item P3_PAGE_MODE_RW has the value `R` in session state...'||unistr('\000a')||
 ''||unistr('\000a')||
 '...and additionally there is a small helper function in use which maximizes the editor and preview window - it is registered as the second true action (of type execute JavaScript) after the markdown dynamic action:'||unistr('\000a')||
 ''||unistr('\000a')||
