@@ -19,7 +19,7 @@
     "url" : "https://github.com/ogobrecht/d3-force-apex-plugin.git"
   },
   "oracle" : {
-    "versions" : ["10.2.0.1"],
+    "versions" : ["10.2.0.1","11.2.0.1"],
     "apex" : {
       "versions" : ["4.2.6","5.0.0"],
       "plugin" : {
