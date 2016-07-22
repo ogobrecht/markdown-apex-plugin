@@ -85,8 +85,8 @@ Please use for all comments and discussions the
  [3]: https://github.com/ogobrecht/markdown-apex-plugin/blob/master/LICENSE.txt
  [4]: https://github.com/ogobrecht/markdown-apex-plugin/releases/latest
  [5]: https://github.com/ogobrecht/markdown-apex-plugin/issues
- [6]: https://apex.oracle.com/pls/apex/f?p=MARKDOWN
+ [6]: https://apex.oracle.com/pls/apex/f?p=66154
  [7]: http://semver.org
  [8]: https://highlightjs.org/
- [9]: https://apex.oracle.com/pls/apex/f?p=MARKDOWN:CUSTOM_PREVIEW
+ [9]: https://apex.oracle.com/pls/apex/f?p=66154:3
 [10]: https://www.dokuwiki.org
