@@ -128,15 +128,23 @@ See the next sections for details.
 
 http://michelf.ca/projects/php-markdown/extra/#table
 
-With the following markdown you can create tables - with the colons you define the text alignment:
+The following markdown...
 
-```
+```markdown
 | Item      | Value | Qty |
 |-----------|------:|:---:|
-| Computer  | $1600 |  5  |
+| Computer  | $1600 |  5  |  
 | Phone     |   $12 |  12 |
 | *Pipe*    |    $1 | 234 |
 ```
+
+...will render to this:
+
+| Item      | Value | Qty |
+|-----------|------:|:---:|
+| Computer  | $1600 |  5  |  
+| Phone     |   $12 |  12 |
+| *Pipe*    |    $1 | 234 |
 
 Span-level markdown inside of table cells will also be converted.
 
@@ -151,7 +159,13 @@ Fenced code blocks are supported à la GitHub. This markdown...
     var x = 2;
     ```
 
-...will be transformed into `<pre><code>var x = 2;</code></pre>`
+...will be transformed into:
+
+```html
+<pre>
+    <code>var x = 2;</code>
+</pre>
+```
 
 If syntax highlighting is enabled, then you can specify the language like so...
 
@@ -159,7 +173,13 @@ If syntax highlighting is enabled, then you can specify the language like so...
     var x = 2;
     ```
 
-...which would be converted to `<pre><code class="language-javascript hljs">var x = 2;</code></pre>`.
+...which would be converted to:
+
+```html
+<pre>
+    <code class="language-javascript hljs">var x = 2;</code>
+</pre>
+```
 
 If you omit the language, the highlighter tries its best to find out the language. The used highlighter is [highlight.js](https://highlightjs.org/) with the default set of 22 common languages: Apache, Bash, C#, C++, CSS, CoffeeScript, Diff, HTML-XML, HTTP, Ini, JSON, Java, JavaScript, Makefile, Markdown, Nginx, Objective-C, PHP, Perl, Python, Ruby, SQL.
 
@@ -170,12 +190,14 @@ If you need more or other languages (172 available) then you can create your [hi
 
 http://michelf.ca/projects/php-markdown/extra/#def-list
 
-```
+```markdown
 Term 1
 :   Definition 1
 
 Term 2
-:   Definition 2
+:   This definition has a code block.
+
+        code block
 ```
 
 becomes:
@@ -188,7 +210,8 @@ becomes:
   </dd>
   <dt>Term 2</dt>
   <dd>
-    Definition 2
+    This definition has a code block.
+    <pre><code>code block</code></pre>
   </dd>
 </dl>
 ```
@@ -200,7 +223,7 @@ Definitions can contain both inline and block-level markdown.
 
 https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/MultiMarkdown%20User%27s%20Guide.md#footnotes
 
-```
+```markdown
 Here is a footnote[^footnote].
 
 [^footnote]: Here is the *text* of the **footnote**.
@@ -246,7 +269,16 @@ You can add class and id attributes to headers and gfm fenced code blocks.
 
 http://daringfireball.net/projects/smartypants/
 
-SmartyPants extension converts ASCII punctuation characters into "smart" typographic punctuation HTML entities.
+SmartyPants extension converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+
+Single backticks
+:   `'Isn't this fun?'` → &#8216;Isn&#8217;t this fun?&#8217;
+
+Quotes
+:   `"Isn't this fun?"` → &#8220;Isn&#8217;t this fun?&#8221;
+
+Dashes
+:   `This -- is an en-dash and this --- is an em-dash` → This &#8211; is an en-dash and this &#8212; is an em-dash
 
 
 #### Newlines
@@ -255,7 +287,7 @@ https://help.github.com/articles/github-flavored-markdown#newlines
 
 Newlines à la GitHub (without the need of two white spaces):
 
-```
+```markdown
 Roses are red
 Violets are blue
 ```
@@ -272,7 +304,17 @@ Violets are blue</p>
 
 https://help.github.com/articles/github-flavored-markdown#strikethrough
 
-Strikethrough à la GitHub: `~~Mistaken text.~~` becomes `<p><del>Mistaken text.</del></p>`
+Strikethrough à la GitHub:
+
+```md
+~~Mistaken text.~~
+```
+
+becomes:
+
+```html
+<p><del>Mistaken text.</del></p>
+```
 
 
 ## Custom Preview Container
