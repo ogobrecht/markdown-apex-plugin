@@ -7,7 +7,10 @@
   "license" : "MIT",
   "author" : {
     "name" : "Ottmar Gobrecht",
-    "url" : "https://github.com/ogobrecht"
+    "email" : "ottmar.gobrecht@gmail.com",
+    "url" : "https://ogobrecht.github.io",
+    "twitter": "ogobrecht",
+    "donationUrl": "https://www.paypal.me/ogobrecht"
   },
   "repository" : {
     "type" : "git",
@@ -24,7 +27,7 @@
         "internalName" : "NET.GOBRECHTS.MARKDOWN",
         "type" : "dynamic action",
         "demo" : "https://apex.oracle.com/pls/apex/f?p=66154:1",
-        "previewImage" : "https://raw.githubusercontent.com/ogobrecht/markdown-apex-plugin/master/docs/img/preview.png"
+        "previewImage" : "https://raw.githubusercontent.com/ogobrecht/markdown-apex-plugin/master/preview.png"
       }
     }
   }
