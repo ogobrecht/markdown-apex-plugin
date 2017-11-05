@@ -380,10 +380,9 @@ Please use for all comments and discussions the [issues functionality on GitHub]
     - Example: `function (text) { return "# Converted text follows\n\n" + text; /*add a level 1 header*/ }`
 - New option `Post Conversion Function`: If you configure here a JavaScript function, this function will get in the first paramater the rendered HTML text and must return the modified HTML text, which will be send then to the preview container
     - Example: `function (text) { return text + "<br>\n**This is not bold, because it was added after the conversion**"; }`
-    });
 - Update to highlight.js 9.9.0 with the default set of 22 common languages: Apache, Bash, C#, C++, CSS, CoffeeScript, Diff, HTML-XML, HTTP, Ini, JSON, Java, JavaScript, Makefile, Markdown, Nginx, Objective-C, PHP, Perl, Python, Ruby, SQL - if you need more or other languages (172 available) then you can create your own custom highlight.js package under [highlightjs.org/download](https://highlightjs.org/download/)
-- Internal name change of created editors; You can now easily force the preview refresh after procedural changes of your text area content - simply call this JavaScript code: `markdown.editors.&lt;normalizedIdOfYourItemOrTextArea>.refreshPreview` (all characters anything else then `a-z`, `A-Z`, `0-9` and `_` are converted to `_`)
-- Restructure source code repository to use Grunt as build to
+- Internal name change of created editors; You can now easily force the preview refresh after procedural changes of your text area content - simply call this JavaScript code: `markdown.editors.normalizedIdOfYourItemOrTextArea.refreshPreview()` (all characters anything else then `a-z`, `A-Z`, `0-9` and `_` are converted to `_`)
+- Restructure source code repository to use Grunt as build tool
 
 ### 1.2.0 (not officially released):
 - Base support for YAML header - this comes from the demo app of my [Markdown Reporter project](https://github.com/ogobrecht/markdown-reporter) and parses out the attributes title, author and date from a YAML header
