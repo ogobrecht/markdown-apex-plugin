@@ -1,5 +1,7 @@
-Please do not download directly this code - this is the development version and can be unstable. You can find the [latest stable version here] (https://github.com/ogobrecht/markdown-apex-plugin/releases/latest).
+[Latest version][1] | [Online demo][2]
 
+[1]: https://github.com/ogobrecht/markdown-apex-plugin/releases/latest
+[2]: https://apex.oracle.com/pls/apex/f?p=66154
 
 # Oracle APEX Dynamic Action Type Plugin: Markdown
 
