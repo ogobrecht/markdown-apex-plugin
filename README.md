@@ -370,6 +370,11 @@ This Markdown plugin uses [semantic versioning](http://semver.org).
 
 Please use for all comments and discussions the [issues functionality on GitHub](https://github.com/ogobrecht/markdown-apex-plugin/issues).
 
+### 1.3.1 (2018-01-07)
+
+- Fixed: When content looks like a YAML header it is removed
+  - Parsing of a YAML header is now done conditional - you can set an config option per usage - the default is no YAML parsing
+
 ### 1.3.0 (2017-03-31)
 - Move sprite image wmd-buttons.png as data URI to the css file (this helps to move plugin files to a  webserver without breaking the image - no relative paths possible under APEX 4.2)
 - Add class `rendered` to rendered elements to avoid double conversion

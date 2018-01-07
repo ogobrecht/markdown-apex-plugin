@@ -54,6 +54,7 @@ BEGIN
             p_dynamic_action.attribute_01 || ';' ELSE NULL END ||
         CASE WHEN p_dynamic_action.attribute_02 IS NOT NULL THEN 'markdown.options.postConversionFunction = ' ||
             p_dynamic_action.attribute_02 || ';' ELSE NULL END ||
+        'markdown.options.parseYamlHeader = '  || CASE WHEN p_dynamic_action.attribute_03 = 'Y' THEN 'true' ELSE 'false' END || ';' ||
         'markdown.init();'
         ,
         'NET.GOBRECHTS.MARKDOWN'

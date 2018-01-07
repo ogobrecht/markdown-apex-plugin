@@ -1,7 +1,7 @@
 /**
- * Markdown for APEX - v1.3.0 - 2017-03-31
+ * Markdown for APEX - v1.3.1 - 2018-01-07
  * https://github.com/ogobrecht/markdown-apex-plugin
- * Copyright (c) 2015-2017 Ottmar Gobrecht - MIT license
+ * Copyright (c) 2015-2018 Ottmar Gobrecht - MIT license
  * For shipped libraries see also https://github.com/ogobrecht/markdown-apex-plugin/LICENSE.txt
  */
 
@@ -4963,7 +4963,7 @@ else
 
 // global markdown object
 var markdown = {};
-markdown.pluginVersion = "1.3.0";
+markdown.pluginVersion = "1.3.1";
 markdown.options = {};
 markdown.substitutions = {};
 markdown.statistics = {};
@@ -5066,22 +5066,24 @@ markdown.init = function () {
 		if (typeof markdown.options.preConversionFunction === "function") {
 			text = markdown.options.preConversionFunction(text);
 		}
-		// YAML header
-		yamlHeader = text.match(/^\s*-{3}\s+([\s\S]+?)(?:-|\.){3}/);
-		if (yamlHeader) {
-			if (yamlHeader.length >= 1) {
-				yamlHeader = yamlHeader[1];
-				title = yamlHeader.match(/^title: *(.*)$/im);
-				if (title && title.length >= 1) {title = title[1];}
-				author = yamlHeader.match(/^author: *(.*)$/im);
-				if (author && author.length >= 1) {author = author[1];}
-				date = yamlHeader.match(/^date: *(.*)$/im);
-				if (date && date.length >= 1) {date = date[1];}
-			}
-			text = text.replace(/^\s*-{3}\s+[\s\S]+?(?:-|\.){3}/,
-				(title ? '# ' + title + '\n' : '') +
-				(author ? '## ' + author + '\n' : '') +
-				(date ? '### ' + date + '\n' : ''));
+		if (markdown.options.parseYamlHeader) {
+			// YAML header
+			yamlHeader = text.match(/^\s*-{3}\s+([\s\S]+?)(?:-|\.){3}/);
+			if (yamlHeader) {
+				if (yamlHeader.length >= 1) {
+					yamlHeader = yamlHeader[1];
+					title = yamlHeader.match(/^title: *(.*)$/im);
+					if (title && title.length >= 1) {title = title[1];}
+					author = yamlHeader.match(/^author: *(.*)$/im);
+					if (author && author.length >= 1) {author = author[1];}
+					date = yamlHeader.match(/^date: *(.*)$/im);
+					if (date && date.length >= 1) {date = date[1];}
+				}
+				text = text.replace(/^\s*-{3}\s+[\s\S]+?(?:-|\.){3}/,
+					(title ? '# ' + title + '\n' : '') +
+					(author ? '## ' + author + '\n' : '') +
+					(date ? '### ' + date + '\n' : ''));
+			}			
 		}
 		return text;
 	});
