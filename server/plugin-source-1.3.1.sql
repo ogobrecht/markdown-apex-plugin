@@ -10,11 +10,11 @@ BEGIN
 
     apex_css.add_file( p_name => 'markdown-'
                      , p_directory => p_plugin.file_prefix
-                     , p_version => '1.3.0' );
+                     , p_version => '1.3.1' );
 
     apex_javascript.add_library( p_name                  => 'markdown-'
                                , p_directory             => p_plugin.file_prefix
-                               , p_version               => '1.3.0'
+                               , p_version               => '1.3.1'
                                , p_check_to_add_minified => TRUE );
 
     IF p_plugin.attribute_02 = 'Y' THEN --enable syntax highlighting in code blocks
@@ -54,6 +54,7 @@ BEGIN
             p_dynamic_action.attribute_01 || ';' ELSE NULL END ||
         CASE WHEN p_dynamic_action.attribute_02 IS NOT NULL THEN 'markdown.options.postConversionFunction = ' ||
             p_dynamic_action.attribute_02 || ';' ELSE NULL END ||
+        'markdown.options.parseYamlHeader = '  || CASE WHEN p_dynamic_action.attribute_03 = 'Y' THEN 'true' ELSE 'false' END || ';' ||
         'markdown.init();'
         ,
         'NET.GOBRECHTS.MARKDOWN'
