@@ -22,6 +22,13 @@ _This Oracle APEX plugin uses the Stack Overflow JavaScript Markdown implementat
 - Prints runtime statistics to the browser console when page is in debug mode
 
 
+## Installation
+
+- Download the [latest release](https://github.com/ogobrecht/markdown-apex-plugin/releases/latest)
+- Install the file `plugin/markdown-apex-plugin-1.x.x.sql` into your application
+- Optional for performance: copy the files under `server` to your webserver and correct the file prefix of the plugin to point to the files on your webserver
+
+
 ## Whats Next?
 
 This will be the last version for APEX 4.2.x. I started already to find replacements for the editor and also the converter, because I found out that under some circumstances the converter fails to render correct results. As an example, if you try to show a code block with XML inside, the converter will produce wrong output. The new version will depend on Font Awesome and Require.js and therefore only available for APEX 5.1.0 or higher. And hey, its time now to upgrade to APEX 5.1.1...
